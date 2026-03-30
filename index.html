@@ -81,69 +81,52 @@
     </div>
     </div>
 
-    <div id="contact">
-         <div class="contact_section">
+   <div id="contact">
+  <div class="contact_section">
 
-            <div class="contact__title"><h1>Contact</h1></div>
+    <div class="contact__title"><h1>Contact</h1></div>
 
-            <form>
+    <form name="contact" method="POST" data-netlify="true">
 
-                <div class="contact-form">
-                <div class="flow">
-                    <h1>Let's chat!</h1>
-                    <p>Please provide your contact details and I will be in touch as quickly as possible.</p>
-                </div>
-                <div class="input__row">
-                    <div class="input__group">
-                        <input 
-                        type="text" 
-                        id="firstname"
-                        name="firstname"
-                        placeholder=" "
-                        />
-                        <label for="firstname">First Name</label>
-                        <span class="error__field"></span>
-                    </div>
+      <input type="hidden" name="form-name" value="contact" />
 
-                    <div class="input__group">
-                        <input 
-                        type="text" 
-                        id="lastname"
-                        name="lastname"
-                        placeholder=" "
-                        />
-                        <label for="lastname">Last Name</label>
-                        <span class="error__field"></span>
-                    </div>
+      <div class="contact-form">
+        <div class="flow">
+          <h1>Let's chat!</h1>
+          <p>Please provide your contact details and I will be in touch as quickly as possible.</p>
+        </div>
 
-                    <div class="input__group">
-                        <input 
-                        type="text" 
-                        id="email"
-                        name="email"
-                        placeholder=" "
-                        />
-                        <label for="email">Email address</label>
-                        <span class="error__field"></span>
-                    </div>
+        <div class="input__row">
+          <div class="input__group">
+            <input type="text" id="firstname" name="firstname" placeholder=" " />
+            <label for="firstname">First Name</label>
+            <span class="error__field"></span>
+          </div>
 
-                    <div class="input__group">
-                        <input 
-                        type="text" 
-                        id="phone"
-                        name="phone"
-                        placeholder=" "
-                        />
-                        <label for="phone">Phone number</label>
-                        <span class="error__field"></span>
-                    </div>
-                    <button type="submit">Submit</button>
+          <div class="input__group">
+            <input type="text" id="lastname" name="lastname" placeholder=" " />
+            <label for="lastname">Last Name</label>
+            <span class="error__field"></span>
+          </div>
 
-                    
+          <div class="input__group">
+            <input type="email" id="email" name="email" placeholder=" " />
+            <label for="email">Email address</label>
+            <span class="error__field"></span>
+          </div>
 
-                </div>
+          <div class="input__group">
+            <input type="text" id="phone" name="phone" placeholder=" " />
+            <label for="phone">Phone number</label>
+            <span class="error__field"></span>
+          </div>
 
-    </div>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+
+    </form>
+
 
         
     
