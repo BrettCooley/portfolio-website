@@ -87,50 +87,58 @@
     <div class="contact__title"><h1>Contact</h1></div>
 
     <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
 
-      <input type="hidden" name="form-name" value="contact" />
-
-      <div class="contact-form">
+    <div class="contact-form">
         <div class="flow">
-          <h1>Let's chat!</h1>
-          <p>Please provide your contact details and I will be in touch as quickly as possible.</p>
+        <h1>Let's chat!</h1>
+        <p>Please provide your contact details and I will be in touch as quickly as possible.</p>
         </div>
 
         <div class="input__row">
-          <div class="input__group">
-            <input type="text" id="firstname" name="firstname" placeholder=" " />
+
+        <div class="input__group">
+            <input type="text" id="firstname" name="firstname" placeholder=" " required />
             <label for="firstname">First Name</label>
             <span class="error__field"></span>
-          </div>
+        </div>
 
-          <div class="input__group">
-            <input type="text" id="lastname" name="lastname" placeholder=" " />
+        <div class="input__group">
+            <input type="text" id="lastname" name="lastname" placeholder=" " required />
             <label for="lastname">Last Name</label>
             <span class="error__field"></span>
-          </div>
+        </div>
 
-          <div class="input__group">
-            <input type="email" id="email" name="email" placeholder=" " />
+        <div class="input__group">
+            <input type="email" id="email" name="email" placeholder=" " required />
             <label for="email">Email address</label>
             <span class="error__field"></span>
-          </div>
+        </div>
 
-          <div class="input__group">
+        <div class="input__group">
             <input type="text" id="phone" name="phone" placeholder=" " />
             <label for="phone">Phone number</label>
             <span class="error__field"></span>
-          </div>
-
-          <button type="submit">Submit</button>
         </div>
-      </div>
 
+        <!-- NEW MESSAGE FIELD -->
+        <div class="input__group">
+            <textarea 
+            id="message" 
+            name="message" 
+            placeholder=" " 
+            rows="4"
+            required
+            ></textarea>
+            <label for="message">What service do you need?</label>
+            <span class="error__field"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        </div>
+    </div>
     </form>
-
-
-        
-    
-
 
 
  

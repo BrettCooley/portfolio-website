@@ -589,6 +589,39 @@ body {
   transition: 0.2s ease;
 }
 
+/* Make textarea match your input style */
+.input__group textarea{
+  width: 100%;
+  padding: 1rem 0 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #1f2a37;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2563eb;
+  outline: none;
+  resize: vertical;
+}
+
+/* Floating label for textarea */
+.input__group textarea:focus ~ label,
+.input__group textarea:not(:placeholder-shown) ~ label{
+  top: -0.4rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Focus accent for textarea */
+.input__group textarea:focus{
+  border-bottom-color: #38bdf8;
+}
+
+/* Make this field span full row */
+.input__group--full{
+  grid-column: 1 / -1;
+}
+
+
 /* Float label on focus OR when user typed */
 .input__group input:focus ~ label,
 .input__group input:not(:placeholder-shown) ~ label{
@@ -604,6 +637,7 @@ body {
 
 /* Button (your existing button tag) */
 .input__row button{
+  grid-column: 1 / -1;
   justify-self: start;
   padding: 0.9rem 1.4rem;
   border: 0;
